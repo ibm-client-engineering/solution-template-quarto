@@ -5,7 +5,7 @@ subtitle: "Testing: Sample"
 author: Bo Kulbacki
 format: html
 include-in-header: 
-    text: 
+    text: |
     <script src = "https://cdn.tailwindcss.com"></script>   
 toc: true
 toc-depth: 5
