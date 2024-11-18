@@ -1,9 +1,11 @@
-<script src = "https://cdn.tailwindcss.com"></script>
+
 ---
 title: "Sample File"
 subtitle: "Testing: Sample"
-author: Bo Kulbacki | 
-format: html
+author: Bo Kulbacki
+format:
+    html:
+    <script src = "https://cdn.tailwindcss.com"></script>
 editor: visual
 toc: true
 toc-depth: 5
@@ -40,10 +42,3 @@ Maecenas tempus ultricies sapien, porta suscipit est facilisis quis. Ut imperdie
 
 Pellentesque a semper nisl, a vehicula libero. Mauris aliquam porttitor nibh ut porttitor. Praesent eu sem lacinia, volutpat dolor id, interdum enim. Etiam sit amet urna rhoncus, iaculis ex hendrerit, suscipit urna. Duis id porta massa, ac ultrices nulla. Vestibulum ut rutrum lacus, ac vulputate libero. Sed metus massa, maximus ac vulputate nec, lacinia sit amet felis.
 
-:::
-{.bg-gradient-to-r}
-Gradient text Here
-
-
-
-:::
