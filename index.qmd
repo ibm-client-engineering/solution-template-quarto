@@ -1,4 +1,4 @@
-
+<script src = "https://cdn.tailwindcss.com"></script>
 ---
 title: "Sample File"
 subtitle: "Testing: Sample"
@@ -9,6 +9,7 @@ toc: true
 toc-depth: 5
 toc-location: left
 ---
+
 ---
 title: "Quarto-Sample"
 ---
@@ -16,7 +17,6 @@ title: "Quarto-Sample"
 This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
 
 ## Introduction
 
@@ -39,3 +39,11 @@ Sed elementum convallis quam, sed tempor massa dictum sit amet. Phasellus ultric
 Maecenas tempus ultricies sapien, porta suscipit est facilisis quis. Ut imperdiet massa condimentum sapien lobortis, dictum eleifend enim cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean interdum vel velit non dictum. Suspendisse bibendum neque ut nulla condimentum, quis dictum sem consectetur. Integer quis arcu sem. Sed condimentum dolor sed libero posuere, sed tristique nulla cursus. In hac habitasse platea dictumst. Aenean ullamcorper condimentum risus, at semper tortor consequat eu.
 
 Pellentesque a semper nisl, a vehicula libero. Mauris aliquam porttitor nibh ut porttitor. Praesent eu sem lacinia, volutpat dolor id, interdum enim. Etiam sit amet urna rhoncus, iaculis ex hendrerit, suscipit urna. Duis id porta massa, ac ultrices nulla. Vestibulum ut rutrum lacus, ac vulputate libero. Sed metus massa, maximus ac vulputate nec, lacinia sit amet felis.
+
+:::
+{.bg-gradient-to-r}
+Gradient text Here
+
+
+
+:::
