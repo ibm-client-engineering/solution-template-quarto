@@ -1,13 +1,25 @@
 /*-- scss:functions --*/
-@function colorToRGB ($color) {
-    @return "rgb(" + red($color) + ", " + green($color) + ", " + blue($color)+ ")";
-  }
-  
-  /*-- scss:defaults --*/
-  $h2-font-size:          1.6rem !default;
-  $headings-font-weight:  500 !default;
-  
-  /*-- scss:rules --*/
-  h1, h2, h3, h4, h5, h6 {
-    text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
-  }
+// @function colorToRGB ($color) {
+//     @return "rgb(" + red($color) + ", " + green($color) + ", " + blue($color)+ ")";
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*-- scss:defaults --*/
+
+
+// $h2-font-size:          1.6rem !default;
+// $headings-font-weight:  500 !default;
+
+/*-- scss:rules --*/
+// h1, h2, h3, h4, h5, h6 {
+//     text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+// }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+body {
+    font-family: "IBM Plex Sans", serif;
+}
+
