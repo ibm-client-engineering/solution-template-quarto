@@ -16,10 +16,20 @@
 //     text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
 // }
 .navbar {
-    background-color: #002d9c;
+    background-color: #001d6c;
+}
+
+#quarto-sidebar {
+    background-color: #f4f4f4;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 4px solid #0f62fe;
+    color: #0f62fe !important;
 }
 
 body {
     font-family: "IBM Plex Sans", serif;
+    background-color: #f4f4f4;
 }
 
