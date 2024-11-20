@@ -16,7 +16,7 @@
 //     text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
 // }
 .navbar {
-    background-color: #001d6c;
+    background-color: #000000;
 }
 
 #quarto-sidebar {
@@ -33,3 +33,29 @@ body {
     background-color: #f4f4f4;
 }
 
+.nav-footer {
+    align-items: center;
+    
+}
+
+.listitem {
+    width: 100%;
+    margin-left: 10em;
+}
+
+a[role=listitem] {
+    color: white;
+    opacity: 50%;
+}
+
+
+.footer__bottom {
+    width: 100%;
+    text-align: center;
+}
+
+.footerLogo {
+    opacity: .5;
+    height: 150px;
+    
+}
