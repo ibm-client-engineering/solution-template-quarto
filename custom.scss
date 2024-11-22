@@ -35,7 +35,12 @@ body {
 
 .nav-footer {
     align-items: center;
-    height: 400px;
+    min-height: 370px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 
