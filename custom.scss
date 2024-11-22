@@ -33,14 +33,17 @@ body {
     background-color: #f4f4f4;
 }
 
-.nav-footer {
-    align-items: center;
+.footer{
     min-height: 370px;
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+}
+.nav-footer {
+    align-items: center;
     
 }
 
