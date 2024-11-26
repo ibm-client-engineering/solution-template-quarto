@@ -16,11 +16,29 @@
 //     text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
 // }
 .navbar {
-    background-color: #000000;
+    background-color: #FFFFFF;
+    border-block-end: 1px solid #E0E0E0;
+
+}
+
+.menu-text {
+    color: black;
+}
+
+.navbar-brand {
+    color: black;
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.navbar-brand:hover {
+    color: black;
 }
 
 #quarto-sidebar {
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
+    grid-column: 1/body-start;
+    padding-left: 11em;
 }
 
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
@@ -30,7 +48,7 @@
 
 body {
     font-family: "IBM Plex Sans", serif;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
 }
 
 .footer{
