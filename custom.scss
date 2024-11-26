@@ -21,6 +21,8 @@
 
 #quarto-sidebar {
     background-color: #f4f4f4;
+    grid-column: 1/body-start;
+    padding-left: 11em;
 }
 
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
