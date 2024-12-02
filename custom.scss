@@ -70,8 +70,22 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
     justify-content: space-between;
-    
-    
+       
+}
+
+.nav-footer-center
+{
+    text-align: left;
+}
+.nav-footer-left
+{
+    text-align: center;
+    width: auto;
+}
+
+.nav-footer-right
+{
+    text-align: left;
 }
 
 .content
@@ -81,7 +95,7 @@ body {
 
 .listitem {
     width: 100%;
-    margin-left: 10em;
+    margin-left: 0;
 }
 
 a[role=listitem] {
