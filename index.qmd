@@ -4,9 +4,6 @@ title: "Sample File"
 subtitle: "Testing: Sample"
 author: Bo Kulbacki
 format: html
-toc: true
-toc-depth: 5
-toc-location: left
 ---
 
 ---

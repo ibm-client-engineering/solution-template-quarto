@@ -23,6 +23,12 @@
 
 .menu-text {
     color: black;
+    font-size: 18pt;
+    padding-bottom: 1em;
+}
+
+.sidebar-item {
+    padding-bottom: 1rem;
 }
 
 .navbar-brand {
@@ -35,11 +41,10 @@
     color: black;
 }
 
-#quarto-sidebar {
+#quarto-margin-sidebar {
     background-color: #FFFFFF;
-    grid-column: 1/body-start;
-    padding-left: 11em;
 }
+
 
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
     border-left: 4px solid #0f62fe;
@@ -49,6 +54,10 @@
 body {
     font-family: "IBM Plex Sans", serif;
     background-color: #FFFFFF;
+}
+
+.content {
+    padding-right: 10vw;
 }
 
 .footer{
