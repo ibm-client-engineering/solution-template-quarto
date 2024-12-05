@@ -1,13 +1,13 @@
 
 ---
-title: "Sample File"
-subtitle: "Testing: Sample"
-author: Bo Kulbacki
+title: "Project Name"
+subtitle: "Subtitle"
+author: List Authors 
 format: html
 ---
 
 ---
-title: "Quarto-Sample"
+Description: "Project Name"
 ---
 
 This is a Quarto website.
@@ -25,6 +25,7 @@ How to use the document.
 ### Python
 
 ```{python}
+#Quarto can run python commands
 print("Hello Wolrd")
 ```
 
