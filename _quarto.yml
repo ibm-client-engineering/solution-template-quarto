@@ -11,6 +11,7 @@ website:
     - title: "Contents"
       style: docked
       background: light
+      collapse-level: 1
       search: true
       contents:
         - href: index.qmd
@@ -31,7 +32,7 @@ website:
             href: steptwo-imp.qmd
           - text: Step Three
             href: stepthree-imp.qmd
-        - text: Key Takeaway
+        - text: Key Takeaways
           href: key-takeaway.qmd
 
 

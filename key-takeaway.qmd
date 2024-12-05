@@ -1,5 +1,5 @@
 ---
-title: "Key Takeaway"
+title: "Key Takeaways"
 format: html
 ---
 
