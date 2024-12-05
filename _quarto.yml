@@ -17,11 +17,22 @@ website:
           text: Problem Definition
         - section: Solution Overview
           contents:
+          - text: Prepare
+            href: stepone.qmd
+          - text: Environment 
+            href: steptwo.qmd
+          - text: Troubleshooting
+            href: stepthree.qmd
+        - section: Implementation Methodology
+          contents:
           - text: Step One
+            href: stepone-imp.qmd
           - text: Step Two
+            href: steptwo-imp.qmd
           - text: Step Three
-        - text: Implementation Methodology
+            href: stepthree-imp.qmd
         - text: Key Takeaway
+          href: key-takeaway.qmd
 
 
   page-footer: 
