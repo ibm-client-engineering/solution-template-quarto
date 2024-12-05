@@ -30,7 +30,7 @@ Pellentesque a semper nisl, a vehicula libero. Mauris aliquam porttitor nibh ut 
 
 ```{python}
 #Quarto can run python commands
-print("Hello Wolrd")
+print("Hello World")
 ```
 
 ### Conclusion
