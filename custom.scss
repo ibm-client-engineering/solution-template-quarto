@@ -61,6 +61,10 @@ body {
     background-color: #FFFFFF;
 }
 
+.bi-github{
+    color:black
+}
+
 @media (min-width: 992px) {
     #quarto-content.page-columns{
         grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start] minmax(50px, 100px) [page-start-inset] 50px [body-start-outset] 50px [body-start] minmax(1.5em, 10em) [body-content-start] minmax(500px, calc(1000px - 3em)) [body-content-end] minmax(1.5em, 10em) [body-end] 50px [body-end-outset] minmax(50px, 100px) [page-end-inset] 50px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];

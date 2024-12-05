@@ -7,6 +7,9 @@ website:
   navbar:
     pinned: true
     search: false
+    right: 
+      - icon: github
+        href: https://github.com/ibm-client-engineering
   sidebar:
     - title: "Contents"
       style: docked
