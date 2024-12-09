@@ -47,8 +47,13 @@
 }
 
 
+.sidebar nav[role=doc-toc] ul>li>ul>li>a, .sidebar nav[role=doc-toc]>ul a {
+    border-left: none;
+    padding-left: 0;
+}
+
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
-    border-left: 4px solid #0f62fe;
+    border-left: none;//4px solid #0f62fe;
     color: #0f62fe !important;
 }
 
@@ -117,11 +122,6 @@ body {
     text-align: left;
     padding-left: 40px;
    
-}
-
-.content
-{
-    width: 50rem;
 }
 
 .listitem {
