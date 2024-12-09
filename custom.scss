@@ -7,6 +7,9 @@
 
 /*-- scss:defaults --*/
 
+:root {
+    --margin-max-width: calc((100% - calc(1400px - 1.5em)) / 2)
+}
 
 // $h2-font-size:          1.6rem !default;
 // $headings-font-weight:  500 !default;
@@ -72,7 +75,7 @@ body {
 
 @media (min-width: 992px) {
     #quarto-content.page-columns{
-        grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start] minmax(50px, 100px) [page-start-inset] 50px [body-start-outset] 50px [body-start] minmax(1.5em, 10em) [body-content-start] minmax(500px, calc(1000px - 3em)) [body-content-end] minmax(1.5em, 10em) [body-end] 50px [body-end-outset] minmax(50px, 100px) [page-end-inset] 50px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];
+        grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start] minmax(50px, 100px) [page-start-inset] 50px [body-start-outset] 50px [body-start] minmax(1.5em, var(--margin-max-width)) [body-content-start] minmax(500px, calc(1000px - 3em)) [body-content-end] minmax(1.5em, var(--margin-max-width)) [body-end] 50px [body-end-outset] minmax(50px, 100px) [page-end-inset] 50px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];
     }
 }
 
