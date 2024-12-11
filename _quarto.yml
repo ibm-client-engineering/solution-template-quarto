@@ -7,6 +7,7 @@ language:
 
 website:
   title: Project Name
+  page-navigation: true
   search: 
     type: textbox
     location: navbar

@@ -24,13 +24,19 @@
 
 }
 
+
 .menu-text {
     color: black;
     font-size: 12pt;
     line-height: 120%;
-    color: inherit
+    color: inherit;
 }
 
+.nav-page .nav-page-text {
+    font-size: 16pt;
+    color: #0f62fe !important;
+    
+}
 /* 
 .menu-text:hover {
     color: blue;
@@ -42,16 +48,17 @@
     font-weight: 400;
 }
 
+.sidebar-menu-container
+{
+    color: #0f62fe !important;
+}
 
 .quarto-sidebar-section-1{
     padding-bottom: 0;
 }
 
 
-.sub-item
-{
-    color: blue
-}
+
 
 .navbar-brand {
     color: black;
