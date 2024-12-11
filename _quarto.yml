@@ -18,7 +18,6 @@ website:
   sidebar:
     - title: "Contents"
       style: docked
-      background: light
       collapse-level: 1
       search: false
       contents:
