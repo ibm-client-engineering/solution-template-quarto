@@ -26,14 +26,22 @@
 
 .menu-text {
     color: black;
-    font-size: 18pt;
-    padding-bottom: 1em;
+    font-size: 12pt;
     line-height: 120%;
+}
+
+.menu-text:hover {
+    color: blue;
 }
 
 .sidebar-item {
     padding: .3rem;
     font-weight: 400;
+}
+
+
+.quarto-sidebar-section-1{
+    padding-bottom: 0;
 }
 
 
@@ -44,7 +52,7 @@
 
 .navbar-brand {
     color: black;
-    font-size: 14pt;
+    font-size: 18pt;
     font-weight: 600;
 }
 
@@ -65,10 +73,6 @@
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
     border-left: none;//4px solid #0f62fe;
     color: #0f62fe !important;
-}
-
-.menu-text{
-    font-size: 1.2rem;
 }
 
 body {
