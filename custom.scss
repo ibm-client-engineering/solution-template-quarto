@@ -44,10 +44,20 @@
 } 
 */
 
+
+
+/* Set the font-weight of outermost .sidebar-item (first-level) to 600 */
 .sidebar-item {
+    font-weight: 600;
     padding: .3rem;
-    font-weight: 400;
 }
+
+/* Set the font-weight of all nested .sidebar-item elements (second-level and beyond) to 400 */
+.sidebar-item .sidebar-item {
+    font-weight: 400;
+    padding: .3rem;
+}
+
 
 .collapse list-unstyled sidebar-section  {
     font-weight: 400;
@@ -94,6 +104,10 @@ body {
     background-color: #FFFFFF;
 }
 
+* {
+    font-family: "IBM Plex Sans", serif;
+}
+
 .bi-github{
     color:black
 }
@@ -128,16 +142,21 @@ body {
        
 }
 
-.nav-footer-center
+.nav-footer-left
 {
+    padding-left: 5rem;
     text-align: left;
     
 }
-.nav-footer-left img
+.nav-footer-center img
 {
-    text-align: left;
-    vertical-align: top;
-    
+    text-align: center;
+    vertical-align: top;    
+}
+.nav-footer-center 
+{
+    text-align: center;
+    vertical-align: top;    
 }
 
 .nav-footer-right
