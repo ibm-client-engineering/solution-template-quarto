@@ -32,7 +32,14 @@
 }
 
 .sidebar-item {
-    padding-bottom: 1rem;
+    padding: .3rem;
+    font-weight: 400;
+}
+
+
+.sub-item
+{
+    color: blue
 }
 
 .navbar-brand {
@@ -146,4 +153,9 @@ a[role=listitem] {
 .footerLogo {
     color: #f4f4f4;
     vertical-align: top;
+}
+
+.quarto-sidebar {
+    
+
 }
