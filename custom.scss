@@ -27,9 +27,10 @@
 
 .menu-text {
     color: black;
-    font-size: 12pt;
+    font-size: 15pt;
     line-height: 120%;
     color: inherit;
+    
 }
 
 .nav-page .nav-page-text {
@@ -48,6 +49,10 @@
     font-weight: 400;
 }
 
+.collapse list-unstyled sidebar-section  {
+    font-weight: 400;
+}
+
 .sidebar-menu-container
 {
     color: #0f62fe !important;
@@ -57,14 +62,13 @@
     padding-bottom: 0;
 }
 
-
-
-
 .navbar-brand {
     color: black;
     font-size: 18pt;
-    font-weight: 600;
+    font-weight: 400;
 }
+
+
 
 .navbar-brand:hover {
     color: black;
