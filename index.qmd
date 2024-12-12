@@ -10,13 +10,9 @@ format: html
 Description: "Project Name"
 ---
 
-This is a Quarto website.
+## The Why
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-## Introduction
-
-Introduction.
+(High-level description of the business challenges and client pain points)
 
 ### Problem Details
 
@@ -26,12 +22,6 @@ Maecenas tempus ultricies sapien, porta suscipit est facilisis quis. Ut imperdie
 
 Pellentesque a semper nisl, a vehicula libero. Mauris aliquam porttitor nibh ut porttitor. Praesent eu sem lacinia, volutpat dolor id, interdum enim. Etiam sit amet urna rhoncus, iaculis ex hendrerit, suscipit urna. Duis id porta massa, ac ultrices nulla. Vestibulum ut rutrum lacus, ac vulputate libero. Sed metus massa, maximus ac vulputate nec, lacinia sit amet felis.
 
-### Python
-
-```{python}
-#Quarto can run python commands
-print("Hello World")
-```
 
 ### Additional Context
 

@@ -6,7 +6,7 @@ language:
       search-text-placeholder: Search
 
 website:
-  title: IBM Client Engineering | Project Name
+  title: Project Name
   page-navigation: true
   search: 
     type: textbox
