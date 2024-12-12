@@ -1,1 +1,1 @@
-Sitemap: https://ibm-client-engineering.github.io/Quarto-Sample/sitemap.xml
+Sitemap: https://ibm-client-engineering.github.io/solution-template-quarto/sitemap.xml
