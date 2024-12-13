@@ -13,6 +13,7 @@ website:
     location: navbar
   navbar:
     pinned: true
+    logo: images/IBMlogo.png
     right: 
       - icon: github
         href: https://github.com/ibm-client-engineering
