@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/steptwo-imp.html</loc>
-    <lastmod>2024-12-13T19:01:19.357Z</lastmod>
+    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/troubleshooting.html</loc>
+    <lastmod>2024-12-13T21:21:26.654Z</lastmod>
   </url>
   <url>
-    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/stepone-imp.html</loc>
-    <lastmod>2024-12-13T19:01:19.357Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/stepthree.html</loc>
-    <lastmod>2024-12-13T19:01:19.357Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/key-takeaway.html</loc>
-    <lastmod>2024-12-13T19:01:19.357Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/stepthree-imp.html</loc>
-    <lastmod>2024-12-13T19:01:19.357Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/stepone.html</loc>
-    <lastmod>2024-12-13T19:01:19.357Z</lastmod>
+    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/environment.html</loc>
+    <lastmod>2024-12-13T21:21:26.654Z</lastmod>
   </url>
   <url>
     <loc>https://ibm-client-engineering.github.io/solution-template-quarto/index.html</loc>
-    <lastmod>2024-12-13T19:01:19.357Z</lastmod>
+    <lastmod>2024-12-13T21:21:26.654Z</lastmod>
   </url>
   <url>
-    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/steptwo.html</loc>
-    <lastmod>2024-12-13T19:01:19.361Z</lastmod>
+    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/key-takeaway.html</loc>
+    <lastmod>2024-12-13T21:21:26.654Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/stepthree-imp.html</loc>
+    <lastmod>2024-12-13T21:21:26.654Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/prepare.html</loc>
+    <lastmod>2024-12-13T21:21:26.654Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/stepone-imp.html</loc>
+    <lastmod>2024-12-13T21:21:26.654Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ibm-client-engineering.github.io/solution-template-quarto/steptwo-imp.html</loc>
+    <lastmod>2024-12-13T21:21:26.654Z</lastmod>
   </url>
 </urlset>
