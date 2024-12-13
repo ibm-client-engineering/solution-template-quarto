@@ -28,11 +28,11 @@ website:
         - section: Solution Overview
           contents:
           - text: Prepare
-            href: stepone.qmd
+            href: prepare.qmd
           - text: Environment 
-            href: steptwo.qmd
+            href: environment.qmd
           - text: Troubleshooting
-            href: stepthree.qmd
+            href: troubleshooting.qmd
         - section: Implementation Methodology
           contents:
           - text: Step One
