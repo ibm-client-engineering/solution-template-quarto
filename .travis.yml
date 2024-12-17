@@ -1,6 +1,6 @@
-language: python
-python: 
-  - "3.9"
+language: ruby
+#python: 
+#  - "3.9"
 
 branches:
   only:
