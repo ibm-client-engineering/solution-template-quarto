@@ -17,6 +17,12 @@ website:
     right: 
       - icon: github
         href: https://github.com/ibm-client-engineering
+      - icon: linkedin
+        menu:
+          - text: Share on your LinkedIn
+            href:  https://www.linkedin.com/company/ibm/
+          - text:  IBM LinkedIn
+            href:  https://www.linkedin.com/company/ibm/
   sidebar:
     - title: "Contents"
       style: docked
