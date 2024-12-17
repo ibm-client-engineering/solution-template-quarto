@@ -1,0 +1,49 @@
+on:
+    workflow_dispatch:
+    push:
+      branches: main
+
+name: Mirror to Internal
+env:
+  GITHUB_TOKEN: ${{ secrets.GH_ENTERPRISE_TOKEN }}
+  GHE_USER: ${{ vars.SYNC_USER }}
+  GHE_FULL_USER: ${{ vars.SYNC_USER_NAME }}
+  ENTERPRISE_URL: ${{ vars.ENTERPRISE_GIT_URL }}
+  ENTERPRISE_EMAIL: ${{ vars.SYNC_USER_EMAIL }}
+  
+jobs:
+  verify_and_mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if remote enterprise repo exists
+        id: repocheck
+        if: ${{github.repository == 'solution-template-quarto'}}
+        run: git ls-remote https://${{ env.GHE_USER }}:${{ env.GITHUB_TOKEN }}@${{ env.ENTERPRISE_URL }}/${{ github.repository }} -q --exit-code
+      - name: Create remote repo
+        if: ${{ failure() && steps.repocheck.conclusion == 'failure' && github.repository == 'solution-template-quarto'}}
+        run: |
+          echo ${{ env.GITHUB_TOKEN }} > /tmp/token.txt
+          gh auth login -p https -h ${{ env.ENTERPRISE_URL }} --with-token < /tmp/token.txt
+          gh repo create --public ${{ github.repository }}
+      - name: Create remote repo
+        if: ${{ failure() && steps.repocheck.conclusion == 'failure' }}
+        run: |
+          echo ${{ env.GITHUB_TOKEN }} > /tmp/token.txt
+          gh auth login -p https -h ${{ env.ENTERPRISE_URL }} --with-token < /tmp/token.txt
+          gh repo create --public ${{ github.repository }}
+      - name: Checkout repo and all branches to stage
+        id: checkout
+        if: ${{github.repository == 'solution-template-quarto'}}
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          fetch-depth: 0
+
+      - name: Mirror the repo up to our internal github
+        id: mirror
+        if: ${{github.repository == 'solution-template-quarto'}}
+        uses: yesolutions/mirror-action@master
+        with:
+          REMOTE: 'https://${{ env.ENTERPRISE_URL }}/${{ github.repository }}'
+          GIT_USERNAME: ${{ env.GHE_USER }}
+          GIT_PASSWORD: ${{ env.GITHUB_TOKEN }}
