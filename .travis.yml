@@ -1,0 +1,18 @@
+language: ruby
+
+branches:
+  only:
+  - main
+
+jobs:
+  include:
+    - stage: build and deploy pages
+      install:
+        - pip install quarto-cli
+#      script:
+#        - quarto render
+      after_success: 
+        - quarto publish gh-pages --no-prompt --no-browser
+
+stages:
+  - build and deploy pages
