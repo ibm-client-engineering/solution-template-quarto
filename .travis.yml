@@ -21,6 +21,7 @@ jobs:
 
       before_deploy: 
       - rvm --default use 2.7.6
+      - gem install dpl -v 1.10.16
       deploy:
       - provider: pages
         github_url: github.ibm.com
