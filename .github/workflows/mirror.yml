@@ -15,6 +15,8 @@ jobs:
   verify_and_mirror:
     runs-on: ubuntu-latest
     steps:
+      - name: echo repo name
+        run: echo ${{github.repository}}
       - name: Check if remote enterprise repo exists
         id: repocheck
         if: ${{github.repository == 'solution-template-quarto'}}
