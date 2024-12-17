@@ -25,12 +25,6 @@ jobs:
           echo ${{ env.GITHUB_TOKEN }} > /tmp/token.txt
           gh auth login -p https -h ${{ env.ENTERPRISE_URL }} --with-token < /tmp/token.txt
           gh repo create --public ${{ github.repository }}
-      - name: Create remote repo
-        if: ${{ failure() && steps.repocheck.conclusion == 'failure'  && github.repository == 'ibm-client-engineering/solution-template-quarto'}}
-        run: |
-          echo ${{ env.GITHUB_TOKEN }} > /tmp/token.txt
-          gh auth login -p https -h ${{ env.ENTERPRISE_URL }} --with-token < /tmp/token.txt
-          gh repo create --public ${{ github.repository }}
       - name: Checkout repo and all branches to stage
         id: checkout
         if: ${{github.repository == 'ibm-client-engineering/solution-template-quarto'}}
