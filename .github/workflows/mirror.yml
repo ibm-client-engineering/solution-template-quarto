@@ -32,10 +32,9 @@ jobs:
         with:
           repository: ${{ github.repository }}
           fetch-depth: 0
-
       - name: Mirror the repo up to our internal github
         id: mirror
-        if: ${{github.repository == 'solution-template-quarto'}}
+        if: ${{github.repository == 'ibm-client-engineering/solution-template-quarto'}}
         uses: yesolutions/mirror-action@master
         with:
           REMOTE: 'https://${{ env.ENTERPRISE_URL }}/${{ github.repository }}'
