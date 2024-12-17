@@ -1,6 +1,6 @@
 language: ruby
-#python: 
-#  - "3.9"
+python: 
+  - "3.9"
 
 branches:
   only:
@@ -12,6 +12,8 @@ branches:
 jobs:
   include:
     - stage: build and deploy pages
+      before_install: 
+        - pacman -S base-devel
       install:
         - pip install quarto-cli
       script:
