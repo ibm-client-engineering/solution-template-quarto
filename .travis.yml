@@ -6,8 +6,8 @@ branches:
   only:
   - main
 
-env:
-  - GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# env:
+#   - GITHUB_TOKEN: $secrets.GITHUB_TOKEN
 
 jobs:
   include:
@@ -17,7 +17,7 @@ jobs:
 #      script:
 #        - quarto render
       script: 
-        - quarto publish gh-pages --no-prompt --no-browser --token ${{ GITHUB_TOKEN }}
+        - quarto publish gh-pages --no-prompt --no-browser --token $GITHUB_TOKEN
 
 stages:
   - build and deploy pages
