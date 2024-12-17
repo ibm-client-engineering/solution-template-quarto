@@ -48,17 +48,11 @@
 div.sidebar-item-container .active, div.sidebar-item-container .show > .nav-link, div.sidebar-item-container .sidebar-link > code {
     color: #0a53be;
     text-decoration: underline;
-}
-
-/* Set font-weight of outermost .sidebar-item (first-level) */
-.sidebar-item:not(.sidebar-item .sidebar-item) {
     font-weight: 600;
-    padding: .3rem;
 }
 
-/* Set font-weight of nested .sidebar-item elements (second-level and beyond) */
-.sidebar-item .sidebar-item {
-    font-weight: 400;
+.sidebar-item {
+    font-weight: 500 !important;
     padding: .3rem;
 }
 
@@ -98,6 +92,10 @@ div.sidebar-item-container .active, div.sidebar-item-container .show > .nav-link
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
     border-left: none;//4px solid #0f62fe;
     color: #0f62fe !important;
+}
+
+.navbar .aa-Autocomplete .aa-Form {
+    width: 250px;
 }
 
 body {
