@@ -11,6 +11,9 @@ env:
   ENTERPRISE_URL: ${{ vars.ENTERPRISE_GIT_URL }}
   ENTERPRISE_EMAIL: ${{ vars.SYNC_USER_EMAIL }}
   TEMPLATE_NAME: 'ibm-client-engineering/solution-template-quarto'
+  CEBOT_GH_TRAVIS_TOKEN: ${{ secrets.CEBOT_GH_TRAVIS_TOKEN }}
+  CEBOT_TRAVIS_API_KEY: ${{ secrets.CEBOT_TRAVIS_API_KEY }}
+  TRAVIS_API_ENDPOINT: ${{ vars.TRAVIS_API_ENDPOINT }}
   
 jobs:
   verify_and_mirror:
@@ -41,3 +44,15 @@ jobs:
           REMOTE: 'https://${{ env.ENTERPRISE_URL }}/${{ github.repository }}'
           GIT_USERNAME: ${{ env.GHE_USER }}
           GIT_PASSWORD: ${{ env.GITHUB_TOKEN }}
+      - name: Set Travis Var (gh token)
+        id: travis
+        if: ${{github.repository == env.TEMPLATE_NAME}}
+        env:
+          REPO_NAME: ${{ env.TEMPLATE_NAME }}
+        run: |
+          curl -X POST \
+          -H "Content-Type: application/json" \
+          -H "Travis-API-Version: 3" \
+          -H "Authorization: token ${{ env.CEBOT_TRAVIS_API_KEY }}" \
+          -d '{ "env_var.name": "GITHUB_TOKEN", "env_var.value": "${{ env.CEBOT_GH_TRAVIS_TOKEN }}", "env_var.public": false }' \
+          ${{ env.TRAVIS_API_ENDPOINT }}/repo/${{ github.repository_owner }}%2F${{ env.REPO_NAME }}/env_vars
