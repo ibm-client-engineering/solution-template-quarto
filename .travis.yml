@@ -14,10 +14,20 @@ jobs:
     - stage: build and deploy pages
       install:
         - pip install quarto-cli
-#      script:
-#        - quarto render
-      script: 
-        - quarto publish gh-pages --no-prompt --no-browser --token $GITHUB_TOKEN
+      script:
+        - quarto render --output-dir build
+#      script: 
+#        - quarto publish gh-pages --no-prompt --no-browser --token $GITHUB_TOKEN
+
+      deploy:
+      - provider: pages
+        github_url: github.ibm.com
+        github_token: $GITHUB_TOKEN
+        target_branch: gh-pages
+        skip_cleanup: true
+        local_dir: build
+        on:
+          branch: main
 
 stages:
   - build and deploy pages
