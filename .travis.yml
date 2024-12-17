@@ -13,7 +13,7 @@ jobs:
         - pip install quarto-cli
 #      script:
 #        - quarto render
-      after_success: 
+      script: 
         - quarto publish gh-pages --no-prompt --no-browser
 
 stages:
