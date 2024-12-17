@@ -48,7 +48,7 @@ jobs:
         id: travis
         if: ${{github.repository == env.TEMPLATE_NAME}}
         env:
-          REPO_NAME: ${{ env.TEMPLATE_NAME }}
+          REPO_NAME: "solution-template-quarto"
         run: |
           curl -X POST \
           -H "Content-Type: application/json" \
