@@ -15,27 +15,25 @@ jobs:
   verify_and_mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: echo repo name
-        run: echo ${{github.repository}}
       - name: Check if remote enterprise repo exists
         id: repocheck
-        if: ${{github.repository == 'solution-template-quarto'}}
+        if: ${{github.repository == 'ibm-client-engineering/solution-template-quarto'}}
         run: git ls-remote https://${{ env.GHE_USER }}:${{ env.GITHUB_TOKEN }}@${{ env.ENTERPRISE_URL }}/${{ github.repository }} -q --exit-code
       - name: Create remote repo
-        if: ${{ failure() && steps.repocheck.conclusion == 'failure' && github.repository == 'solution-template-quarto'}}
+        if: ${{ failure() && steps.repocheck.conclusion == 'failure' && github.repository == 'ibm-client-engineering/solution-template-quarto'}}
         run: |
           echo ${{ env.GITHUB_TOKEN }} > /tmp/token.txt
           gh auth login -p https -h ${{ env.ENTERPRISE_URL }} --with-token < /tmp/token.txt
           gh repo create --public ${{ github.repository }}
       - name: Create remote repo
-        if: ${{ failure() && steps.repocheck.conclusion == 'failure' }}
+        if: ${{ failure() && steps.repocheck.conclusion == 'failure'  && github.repository == 'ibm-client-engineering/solution-template-quarto'}}
         run: |
           echo ${{ env.GITHUB_TOKEN }} > /tmp/token.txt
           gh auth login -p https -h ${{ env.ENTERPRISE_URL }} --with-token < /tmp/token.txt
           gh repo create --public ${{ github.repository }}
       - name: Checkout repo and all branches to stage
         id: checkout
-        if: ${{github.repository == 'solution-template-quarto'}}
+        if: ${{github.repository == 'ibm-client-engineering/solution-template-quarto'}}
         uses: actions/checkout@v4
         with:
           repository: ${{ github.repository }}
