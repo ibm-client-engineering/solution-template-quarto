@@ -10,6 +10,7 @@ env:
   GHE_FULL_USER: ${{ vars.SYNC_USER_NAME }}
   ENTERPRISE_URL: ${{ vars.ENTERPRISE_GIT_URL }}
   ENTERPRISE_EMAIL: ${{ vars.SYNC_USER_EMAIL }}
+  TEMPLATE_NAME: 'ibm-client-engineering/solution-template-quarto'
   
 jobs:
   verify_and_mirror:
@@ -17,24 +18,24 @@ jobs:
     steps:
       - name: Check if remote enterprise repo exists
         id: repocheck
-        if: ${{github.repository == 'ibm-client-engineering/solution-template-quarto'}}
+        if: ${{github.repository == env.TEMPLATE_NAME}}
         run: git ls-remote https://${{ env.GHE_USER }}:${{ env.GITHUB_TOKEN }}@${{ env.ENTERPRISE_URL }}/${{ github.repository }} -q --exit-code
       - name: Create remote repo
-        if: ${{ failure() && steps.repocheck.conclusion == 'failure' && github.repository == 'ibm-client-engineering/solution-template-quarto'}}
+        if: ${{ failure() && steps.repocheck.conclusion == 'failure' && github.repository == env.TEMPLATE_NAME}}
         run: |
           echo ${{ env.GITHUB_TOKEN }} > /tmp/token.txt
           gh auth login -p https -h ${{ env.ENTERPRISE_URL }} --with-token < /tmp/token.txt
           gh repo create --public ${{ github.repository }}
       - name: Checkout repo and all branches to stage
         id: checkout
-        if: ${{github.repository == 'ibm-client-engineering/solution-template-quarto'}}
+        if: ${{github.repository == env.TEMPLATE_NAME}}
         uses: actions/checkout@v4
         with:
           repository: ${{ github.repository }}
           fetch-depth: 0
       - name: Mirror the repo up to our internal github
         id: mirror
-        if: ${{github.repository == 'ibm-client-engineering/solution-template-quarto'}}
+        if: ${{github.repository == env.TEMPLATE_NAME}}
         uses: yesolutions/mirror-action@master
         with:
           REMOTE: 'https://${{ env.ENTERPRISE_URL }}/${{ github.repository }}'
