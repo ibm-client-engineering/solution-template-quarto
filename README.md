@@ -12,7 +12,7 @@ To be able to build and view changes locally for these docs you will need to ins
 * Text Editor
 
 You can also install Quarto via Command Line:
-pip install quarto-cli
+'pip install quarto-cli'
 
 
 ## How do I use it?
