@@ -11,8 +11,9 @@ To be able to build and view changes locally for these docs you will need to ins
 * Neovim
 * Text Editor
 
-You can also install Quarto via Command Line: 'pip install quarto-cli'
-
+You can also install Quarto via Command Line: 
+`pip install quarto-cli` or 
+`brew install --cask quarto`
 
 ## How do I use it?
 1. Change line 9 of the `_quarto.yml` file to the appropriate Project Name of the solution doc.
