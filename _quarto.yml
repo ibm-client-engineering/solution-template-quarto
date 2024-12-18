@@ -35,21 +35,21 @@ website:
         - section: Solution Overview
           contents:
           - text: Prepare
-            href: prepare.qmd
+            href: src/solution_overview/prepare.qmd
           - text: Environment 
-            href: environment.qmd
+            href: src/solution_overview/environment.qmd
           - text: Troubleshooting
-            href: troubleshooting.qmd
+            href: src/solution_overview/troubleshooting.qmd
         - section: Implementation Methodology
           contents:
           - text: Step One
-            href: stepone-imp.qmd
+            href: src/implementation_methodology/stepone-imp.qmd
           - text: Step Two
-            href: steptwo-imp.qmd
+            href: src/implementation_methodology/steptwo-imp.qmd
           - text: Step Three
-            href: stepthree-imp.qmd
+            href: src/implementation_methodology/stepthree-imp.qmd
         - text: Key Takeaways
-          href: key-takeaway.qmd
+          href: src/key-takeaway.qmd
 
 
   page-footer: 
@@ -63,7 +63,7 @@ website:
     
 format:
   html:
-    theme: custom.scss
+    theme: src/custom.scss
     toc: true
     toc-location: right
 
