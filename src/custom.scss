@@ -18,13 +18,19 @@
 .navbar {
     background-color: #ffffff; /* Light gray background */
     border-block-end: 1px solid #E0E0E0; /* Bottom border with a light gray color */
-    margin-top: -10px;  /* Shrinking Top Margin to make header thinner */
-    margin-bottom: -10px; /* Shrinking Botton Margin to make header thinner */
 }
+
 
 /* Navbar Logo Size */
 .navbar-logo {
     max-height: 75px; /* Restrict the height of the logo */
+}
+
+/* Navbar Margin Sizing Target */
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl 
+{ 
+    margin-top: -10px; /* Reducing the top margin size */
+    margin-bottom: -10px; /* Reducing the bottom margin size */
 }
 
 /* Target the search container and components */
