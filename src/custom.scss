@@ -18,6 +18,8 @@
 .navbar {
     background-color: #ffffff; /* Light gray background */
     border-block-end: 1px solid #E0E0E0; /* Bottom border with a light gray color */
+    margin-top: -10px;  /* Shrinking Top Margin to make header thinner */
+    margin-bottom: -10px; /* Shrinking Botton Margin to make header thinner */
 }
 
 /* Navbar Logo Size */
