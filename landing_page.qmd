@@ -12,7 +12,7 @@ Subtitle
 :::: {.columns}
 
 ::: {.column width="40%"}
- <button onclick="window.location.href='problem_statement.qmd';" class = "btn btn-our-doc">Our Documentation</button>
+ <button onclick="window.location.href='problem_statement.qmd';" class = "btn btn-our-doc">Our Documentation </button>
 :::
 
 ::: {.column width="60%"}
