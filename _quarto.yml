@@ -22,7 +22,7 @@ website:
       - icon: linkedin
         menu:
           - text: Share on your LinkedIn
-            href:  https://www.linkedin.com/company/ibm/
+            href:  http://linkedin.com/post
           - text:  IBM LinkedIn
             href:  https://www.linkedin.com/company/ibm/
   sidebar:
