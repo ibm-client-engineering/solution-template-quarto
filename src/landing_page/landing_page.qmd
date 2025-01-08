@@ -1,7 +1,9 @@
 ---
 format:
   html:
-    theme: [src/custom.scss , landing_page.scss]
+    theme: 
+      - src/custom.scss
+      - src/landing_page/landing_page.scss
 
 ---
 
@@ -16,7 +18,7 @@ Subtitle
 :::
 
 ::: {.column width="60%"}
-![](images/IBMlogo.png){width=400}
+![](/images/IBMlogo.png){width=400}
 :::
 
 :::: 
