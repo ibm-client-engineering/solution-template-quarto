@@ -60,16 +60,6 @@ div.sidebar-item-container .active, div.sidebar-item-container .show > .nav-link
     margin-left: -0.75rem; /* Adjust alignment with the left margin */
 }
 
-/* Bold Top-Level Headings in Sidebar */
-.sidebar nav[role=doc-toc] ul>li>a {
-    font-weight: 800; /* Bold font weight for primary headings */
-}
-
-/* Normal Font Weight for Subheadings */
-.sidebar nav[role=doc-toc] ul>li>ul>li>a {
-    font-weight: 100; /* Normal font weight for subheadings */
-}
-
 /* General Sidebar Item Padding */
 .sidebar-item {
     padding: .2rem; /* Adds padding for better spacing */
@@ -88,8 +78,26 @@ div.sidebar-item-container .active, div.sidebar-item-container .show > .nav-link
 /* Navbar Brand Text Styling */
 .navbar-brand {
     color: black; /* Default color */
-    font-size: 18pt; /* Large font size */
+    font-size: 14pt; /* Large font size */
+    font-weight: 600;
+    position: relative;
+    display: block;
+    -webkit-padding-start: 1rem;
+    padding-inline-start: 1rem;
 }
+
+.navbar-brand:not(.navbar-brand-logo):before {
+    position: absolute;
+    display: block;
+    background-color: #DEE2E6;
+    block-size: 2rem;
+    content: "";
+    inline-size: .0625rem;
+    inset-block-start: 50%;
+    inset-inline-start: 0;
+    transform: translateY(-50%);
+}
+
 
 /* Navbar Brand Hover State */
 .navbar-brand:hover {
@@ -102,19 +110,25 @@ div.sidebar-item-container .active, div.sidebar-item-container .show > .nav-link
 }
 
 /* Remove Border and Padding for Sidebar TOC Links */
+.sidebar nav[role=doc-toc] {
+    opacity: .8;
+    font-weight: 400;
+    font-size: .925rem;
+    line-height: 17px;
+    padding: 0.5rem 0.75rem; /* Internal padding for spacing */
+}
+
 .sidebar nav[role=doc-toc] ul>li>ul>li>a, .sidebar nav[role=doc-toc]>ul a {
     border-left: none; /* Removes border from TOC links */
-    padding-left: 0; /* No extra padding on the left */
+    padding-left: calc(1rem + 4px);
 }
 
 /* Highlight Active State in Sidebar TOC */
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
     border-left: 4px solid #0f62fe; /* Thin blue left border */
-    color: #0f62fe !important; /* Blue text color */
-    background-color: #E9E9E9; /* Light blue background */
     border-radius: 0 4px 4px 0; /* Rounded right corners */
-    padding: 0.50em 0.75rem; /* Internal spacing */
-    margin-left: -0.75rem; /* Aligns active items to the left */
+    padding-left: 1rem;
+    color: black !important;
 }
 
 /* Autocomplete Search Form Width */
@@ -153,7 +167,7 @@ nav .nav-link i, nav .dropdown-item i {
 }
 /* Specific styling for brand icons */
 .bi-linkedin {
-    color: #0077B5; /* LinkedIn icon in blue */
+    color: black; /* LinkedIn icon in blue */
     font-size: 24px !important;
     height: 50px; /* Icon height */
     width: 50px; /* Icon width */
@@ -225,6 +239,8 @@ nav .nav-link i, nav .dropdown-item i {
         grid-template-columns: 1.5em [screen-start] 1.5em [screen-start-inset page-start] minmax(50px, 100px) [page-start-inset] 50px [body-start-outset] 150px [body-start] minmax(1.5em, var(--margin-max-width)) [body-content-start] minmax(500px, calc(1000px - 3em)) [body-content-end] minmax(1.5em, var(--margin-max-width)) [body-end] 50px [body-end-outset] minmax(50px, 100px) [page-end-inset] 50px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];
     }
 }
+
+
 
 /* Footer Styling */
 .footer {
