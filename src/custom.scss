@@ -184,7 +184,32 @@ nav .nav-link i, nav .dropdown-item i {
     align-items: center;      /* Align arrow with text */
     text-decoration: none;
     width: 100%;             /* Take full width of container */
+    justify-content: inherit;
 }
+
+/* Style the navigation next button - right align */
+.nav-page-next{
+    justify-content: end; /* Justifies the navigation links to the end */
+}
+
+/* Style the navigation previous button - left align */
+.nav-page-previous {
+    justify-content: start; /* Justifies the navigation links to the start */
+}
+
+/* Style the dot for the authors section  */
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: #0072C3; 
+    font-size: 12pt
+}
+
 
 /* Only apply hover effect to nav items with content */
 .nav-page:has(a):hover {
@@ -225,6 +250,7 @@ nav .nav-link i, nav .dropdown-item i {
         grid-template-columns: 1.5em [screen-start] 1.5em [screen-start-inset page-start] minmax(50px, 100px) [page-start-inset] 50px [body-start-outset] 150px [body-start] minmax(1.5em, var(--margin-max-width)) [body-content-start] minmax(500px, calc(1000px - 3em)) [body-content-end] minmax(1.5em, var(--margin-max-width)) [body-end] 50px [body-end-outset] minmax(50px, 100px) [page-end-inset] 50px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];
     }
 }
+
 
 /* Footer Styling */
 .footer {

@@ -2,10 +2,15 @@
 ---
 title: "Project Name"
 subtitle: "Subtitle"
-author: List Authors 
 format: html
 ---
-
+```{=html}
+<span class="dot">SL</span> &ensp;Samuel Lee&ensp;
+```
+```{=html}
+<span class="dot">BK</span> &ensp;Bo Kulbacki&ensp;
+```
+<br>
 ---
 Description: "Project Name"
 ---
