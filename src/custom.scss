@@ -24,7 +24,7 @@
 /* Navbar Logo Size */
 .navbar-logo {
     max-height: 75px; /* Restrict the height of the logo */
-    margin-left: -20px;
+    margin-left: 0px;
 }
 
 /* Navbar Margin Sizing Target */
@@ -198,7 +198,32 @@ nav .nav-link i, nav .dropdown-item i {
     align-items: center;      /* Align arrow with text */
     text-decoration: none;
     width: 100%;             /* Take full width of container */
+    justify-content: inherit;
 }
+
+/* Style the navigation next button - right align */
+.nav-page-next{
+    justify-content: end; /* Justifies the navigation links to the end */
+}
+
+/* Style the navigation previous button - left align */
+.nav-page-previous {
+    justify-content: start; /* Justifies the navigation links to the start */
+}
+
+/* Style the dot for the authors section  */
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: #0072C3; 
+    font-size: 12pt
+}
+
 
 /* Only apply hover effect to nav items with content */
 .nav-page:has(a):hover {
@@ -241,7 +266,6 @@ nav .nav-link i, nav .dropdown-item i {
 }
 
 
-
 /* Footer Styling */
 .footer {
     font-size: 1rem; /* Base font size */
@@ -275,7 +299,7 @@ nav .nav-link i, nav .dropdown-item i {
 .nav-footer-left img {
     text-align: left;
     vertical-align: top; /* Aligns image to the top */
-    margin-left: -10px; /* Aligns image to the IBM logo in the header */
+    margin-left: -20px; /* Aligns image to the IBM logo in the header */
 }
 
 /* Footer Center Section */
