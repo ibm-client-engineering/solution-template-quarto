@@ -24,7 +24,7 @@
 /* Navbar Logo Size */
 .navbar-logo {
     max-height: 75px; /* Restrict the height of the logo */
-    margin-left: 0px;
+    margin-left: -20px;
 }
 
 /* Navbar Margin Sizing Target */
@@ -78,7 +78,6 @@ div.sidebar-item-container .active, div.sidebar-item-container .show > .nav-link
 /* Navbar Brand Text Styling */
 .navbar-brand {
     color: black; /* Default color */
-    font-size: 14pt; /* Large font size */
     font-weight: 600;
     position: relative;
     display: block;
@@ -221,7 +220,11 @@ nav .nav-link i, nav .dropdown-item i {
     text-align: center;
     color: white;
     background-color: #0072C3; 
-    font-size: 12pt
+    font-size: 9pt;
+    align-items: center;
+    vertical-align: bottom;
+    justify-content: center;
+    display: inline-flex;
 }
 
 
@@ -265,7 +268,6 @@ nav .nav-link i, nav .dropdown-item i {
     }
 }
 
-
 /* Footer Styling */
 .footer {
     font-size: 1rem; /* Base font size */
@@ -299,7 +301,7 @@ nav .nav-link i, nav .dropdown-item i {
 .nav-footer-left img {
     text-align: left;
     vertical-align: top; /* Aligns image to the top */
-    margin-left: -20px; /* Aligns image to the IBM logo in the header */
+    margin-left: -10px; /* Aligns image to the IBM logo in the header */
 }
 
 /* Footer Center Section */
