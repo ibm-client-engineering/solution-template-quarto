@@ -6,7 +6,7 @@ language:
       search-text-placeholder: Search
 
 website:
-  title: Project Name
+  title: Solutions Hub
   favicon: images/bee.png
   page-navigation: true
   search: 
