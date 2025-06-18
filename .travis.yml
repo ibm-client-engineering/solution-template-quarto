@@ -21,12 +21,8 @@ jobs:
 #      script: 
 #        - quarto publish gh-pages --no-prompt --no-browser --token $GITHUB_TOKEN
 
-      before_deploy: 
-      - rvm --default use 2.7.6
       deploy:
       - provider: pages
-        edge:
-          branch: v1.10.16
         github_url: github.ibm.com
         github_token: $GITHUB_TOKEN
         target_branch: gh-pages
